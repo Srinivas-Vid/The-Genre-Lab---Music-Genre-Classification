@@ -195,8 +195,11 @@ FFMPEG & Pydub – Audio Processing
 Developed by:
 
 Srinivas Erramalla & Team
+
 Avanthi Institute of Engineering and Technology
+
 📍 Hyderabad, India
+
 📧 srinivaserramalla5@gmail.com 
 
 
