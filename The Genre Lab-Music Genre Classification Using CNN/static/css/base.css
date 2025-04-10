@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+}
+
+.hero-header {
+    background: rgba(0, 0, 0, 0.8) url("https://picsum.photos/3000/2000") center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.brand a {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+.brand span {
+    color: #e94560;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #eee;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e94560;
+}
+
+nav ul li a::before, nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #e94560;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+nav ul li a::before {
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before, nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    color: #eee;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    inset: 0;
+    transition: opacity 0.65s;
+    transform: scale(0);
+    opacity: 0;
+    display: none;
+}
+
+.content-wrapper {
+    padding: 2rem;
+}
+
+.footer {
+    background: #111;
+    padding: 2rem 0;
+    color: #d9d9d9;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #e94560;
+}
+
+.social a span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #1a1a1a;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.social a span:hover {
+    background: #e94560;
+}
+
+.bottom {
+    text-align: center;
+    padding: 1rem;
+    background: #151515;
+}
+
+@media (max-width: 700px) {
+    .menu-toggle { display: block; }
+    nav {
+        display: none;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+        padding-top: 0;
+    }
+    nav.menu-open, .overlay.menu-open {
+        display: flex;
+        transform: scale(1);
+        opacity: 1;
+    }
+    nav ul { flex-direction: column; }
+    nav ul li { margin: 2rem 0; }
+    nav ul li a { font-size: 2.5rem; }
+}

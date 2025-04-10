@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/ai.ico') }}" type="image/gif">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}The  Genre  Lab{% endblock %}</title>
+</head>
+<body>
+    <header class="hero-header">
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <h1 class="brand"><a href="{{ url_for('homepage') }}">The<span>Genre</span>Lab</a></h1>
+                <ul>
+                    <li><a href="{{ url_for('homepage') }}">Home</a></li>
+                    <li><a href="{{ url_for('project') }}">Project</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="content-wrapper">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+        <div class="main-content">
+            <div class="left box">
+                <h2>About Us</h2>
+                <div class="content">
+                    <p class="about_us">We are a group of three Computer Science students from Avanthi Institute of Engineering and Technology, participating in the Code Unnati program...</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place"><span class="fas fa-map-marker-alt"></span><span class="text">Hyderabad</span></div>
+                    <div class="phone"><span class="fas fa-phone-alt"></span><span class="text">7xxxxxxxx1</span></div>
+                    <div class="email"><span class="fas fa-envelope"></span><span class="text">genreai@gmail.com</span></div>
+                </div>
+            </div>
+            <div class="right box">
+                <img src="{{ url_for('static', filename='img/MGC-logo.png') }}" alt="logo" class="footer-logo"/>
+            </div>
+        </div>
+        <div class="bottom">
+            <center>
+                <span class="credit">Created By <a href="#">SSS</a> | </span>
+                <span class="far fa-copyright"></span><span>2021 All rights reserved.</span>
+            </center>
+        </div>
+    </footer>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/header.js') }}"></script>
+</body>
+</html>

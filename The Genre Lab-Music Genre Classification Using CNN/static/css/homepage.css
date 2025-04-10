@@ -1,0 +1,70 @@
+.h_container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.center { text-align: center; }
+
+h1 {
+  color: #e94560;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in;
+}
+
+p {
+  color: #a8dadc;
+  font-size: 1.2rem;
+}
+
+.how-to h2 {
+  color: #e94560;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.how-to ol li {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.upload-form label {
+  color: #e94560;
+  font-size: 1.2rem;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  background: #0f3460;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button {
+  background: #e94560;
+  border: none;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background: #ff6f61;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

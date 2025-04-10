@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/prediction.css') }}">
+<div class="prediction-container">
+    <h2>Prediction Results</h2>
+    <table class="center">
+        <tr>
+            <td>1. {{ prediction }}</td>
+            <td>% {{ probability }}</td>
+        </tr>
+        <tr>
+            <td>2. {{ second_prediction }}</td>
+            <td>% {{ second_probability }}</td>
+        </tr>
+        <tr>
+            <td>3. {{ third_prediction }}</td>
+            <td>% {{ third_probability }}</td>
+        </tr>
+    </table>
+</div>
+{% include 'counter.html' %}
+{% endblock %}

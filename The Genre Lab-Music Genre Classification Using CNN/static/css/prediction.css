@@ -1,0 +1,32 @@
+.prediction-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #e94560;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+table.center {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #a8dadc;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+td:first-child {
+    color: #e94560;
+}

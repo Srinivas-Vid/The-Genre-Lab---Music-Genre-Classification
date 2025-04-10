@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+<div class="h_container">
+    <div class="center">
+        <h1>Genre Radar - Music Genre Classifier</h1>
+    </div>
+    <p>Welcome to the Music Genre Classifier! This application uses Deep Learning to identify song genres.</p>
+    <div class="how-to">
+        <h2>How to Use</h2>
+        <ol>
+            <li>Upload your song file.</li>
+            <li>Use <strong>.wav</strong> or <strong>.mp3</strong> formats for best results.</li>
+            <li>Click <strong>"Learn"</strong> to predict the genre.</li>
+        </ol>
+    </div>
+    <div class="center upload-form">
+        <form action="{{ url_for('prediction') }}" method="POST" enctype="multipart/form-data">
+            <label for="audio-upload">Select a File:</label>
+            <input type="file" id="audio-upload" name="myfile" required accept=".wav,.mp3">
+            <a id="link" download style="display: none">shouldn't be visible</a>
+            <ul id="myList"></ul>
+            <button class="button" formtarget="_self"><span>Learn</span></button>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/display Audio.js') }}"></script>
+{% endblock %}
