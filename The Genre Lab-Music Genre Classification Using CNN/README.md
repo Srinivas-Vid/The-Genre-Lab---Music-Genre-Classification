@@ -91,7 +91,7 @@ CREATE TABLE contacts (
 1.Fork this repository.
 
  ```console
-git clone https://github.com/MelihGulum/Music-Genre-Classification.git
+git clone https://github.com/Srinivas-Vid/The-Genre-Lab---Music-Genre-Classification.git
 ```
 
 2.Load the dependencies of the project
@@ -103,7 +103,7 @@ pip install -r requirements.txt
 3.Now you can run project.
 
 ```console
-flask --app MGC_flask.py --debug run
+flask --app TheGenreLab.py --debug run
 ```
  
 
