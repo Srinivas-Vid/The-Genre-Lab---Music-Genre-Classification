@@ -2,9 +2,6 @@
 
 🎵 The Genre Lab – Music Genre Classification with Deep Learning
 
-<p align="center"> 
-  <img src="static/img/MGC-logo.png" alt="MGC Logo" width="350px" height="100px">
-</p>
 ---
 
 📚 Table of Contents
@@ -101,10 +98,7 @@ Softmax Activation
 
 Accuracy: ~80% on test data.
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/81585804/204745883-6e15c799-f11e-4439-a034-09e208442ea6.png" alt="Model Architecture" height="200px">
-  <br><em>Model Architecture</em>
-</p>
+
 ---
 
 🌐 Web Application - Flask
@@ -146,27 +140,17 @@ Convert MP3 ➝ WAV
 Trim relevant parts before prediction
 
 
-> ✅ Ensure FFMPEG is in system PATH.
-
-
+> ✅ Ensure FFMPEG is in system
 
 
 ---
 
-🖼️ Screenshots
-
-<p align="center"> 
-  <img src="https://user-images.githubusercontent.com/81585804/204807317-1a3edabd-d173-436e-b0a9-080d59ac7104.gif" alt="App Screenshot" width="75%">
-</p>
----
 
 🧪 Results & Accuracy
 
 Training Accuracy: 85%
 
 Validation Accuracy: 80%
-
-
 
 
 
